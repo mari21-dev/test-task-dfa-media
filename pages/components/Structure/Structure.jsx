@@ -11,7 +11,7 @@ export const Structure = () => {
             <div className={s.cardContainer}>
                 {levelCardMock.map(m => <LevelCard key={m.index} paymentLevel={m.paymentLevel}
                                                    activePartners={m.activePartners} users={m.users}
-                                                   avatar={m.avatar} index={m.index}/>)}
+                                                   avatar={m.avatar}/>)}
             </div>
         </div>
     )

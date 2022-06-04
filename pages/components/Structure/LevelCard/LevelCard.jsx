@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./LevelCard.module.css";
 
-export const LevelCard = ({activePartners, paymentLevel, users, avatar, index}) => {
+export const LevelCard = ({activePartners, paymentLevel, users}) => {
     return <div className={s.card}>
         <div className={s.headerCard}>
             <div className={s.numbers}>
@@ -16,7 +16,8 @@ export const LevelCard = ({activePartners, paymentLevel, users, avatar, index}) 
 
         <div className={s.usersCard}>
             {users.map((u) => {
-                return <div className={s.item}><img src={u.avatar} width="25%" height="25%"/><span>{u.name}</span></div>
+                return <div className={s.item}><img src={u.avatar} width="25%"
+                                                    height="25%"/><span>{u.name}</span></div>
             })}
         </div>
     </div>
