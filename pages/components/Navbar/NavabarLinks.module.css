@@ -1,0 +1,93 @@
+.nav {
+    padding: 105px 32px 0 10px;
+    font-size: 12px;
+    display: inline-block;
+    min-width: 180px;
+    color: #8B97AE;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 28px;
+    padding-left: 30px;
+}
+
+.item a {
+    color: #8B97AE;
+    text-decoration: none;
+}
+
+.active {
+    display: flex;
+    align-items: center;
+    padding-bottom: 28px;
+}
+
+.active a {
+    color: #8B97AE;
+    text-decoration: none;
+}
+
+.item link.activeLink {
+    color: gold;
+}
+
+.item img {
+    padding-right: 20px;
+}
+
+.active img {
+    padding-right: 20px;
+}
+
+.active div {
+    width: 4px;
+    height: 30px;
+    background: #6781F7;
+    margin-right: 25px;
+}
+
+.navbarLinks {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbarLinksContainer {
+        padding: 130px 25px 0 10px;
+    }
+
+    .navbarLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .linkContainer {
+        display: none;
+    }
+
+    .linkContainerOpen {
+        display: flex;
+        top: 60px;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        left: 11%;
+        z-index: 999;
+        background: #ffffff;
+        border-radius: 10px;
+        position: fixed;
+        width: 78%;
+    }
+
+    .nav {
+        padding: 30px 32px 0 10px;
+        font-size: 12px;
+        display: inline-block;
+        min-width: 180px;
+        color: #8B97AE;
+    }
+
+}
